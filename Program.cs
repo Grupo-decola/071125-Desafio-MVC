@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using _071125_Desafio_MVC.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<_071125_Desafio_MVCContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("_071125_Desafio_MVCContext") ?? throw new InvalidOperationException("Connection string '_071125_Desafio_MVCContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

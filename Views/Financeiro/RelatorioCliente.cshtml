@@ -1,0 +1,20 @@
+﻿@model _071125_Desafio_MVC.Models.Cliente
+
+
+<h2>Relatorio por cliente</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Cliente</th>
+            <th>Total Gasto</th>
+        </tr>
+    </thead>
+    <tbody>
+ 
+            <tr>
+                <td>@Model.Nome</td>
+                <td>@ViewBag["TotalGasto"]</td>
+            </tr>
+    </tbody>
+</table>
