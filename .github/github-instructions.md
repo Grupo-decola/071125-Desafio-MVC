@@ -19,33 +19,35 @@ A empresa **XYZ** atua no setor de **entregas de documentos sigilosos**. Foi sol
 ### 1. Cliente
 - [ ] Cadastro de cliente (Nome, CPF/CNPJ, Endereço, Contato)
 - [ ] Edição e exclusão de dados cadastrais
-- [ ] Autenticação para acesso ao sistema
-- [ ] Visualização de seus próprios pedidos
+- [ ] Visualização de seus próprios pedidos -> /Clientes/id/Pedidos
 
 ### 2. Pedido
 - [ ] Criação de pedido pelo cliente autenticado
-- [ ] Seleção de documentos a serem entregues
-- [ ] Definição do endereço de entrega
+- [ ] Seleção de documentos a serem entregues -> String simbolizando
+- [ ] Definição do endereço de entrega 
 - [ ] Registro automático da data e hora do pedido
 - [ ] Associação do pedido a um cliente
 
 ### 3. Movimentação
 - [ ] Atualização de status do pedido (ex: "Pendente", "Em Transporte", "Entregue")
 - [ ] Registro de data/hora de cada mudança de status
+  - -> UpdatedAt -> sempre que tiver movimentação registra o horário MAS sobrescreve o anterior
+  - -> Entidade / objeto de movimentação que registra a transição de status e o horário / data
+  - -> campos individuais pra cada movimentação PendenteAt, EmTransporteAt, EntregueAt
 - [ ] Registro do responsável pela movimentação
+  - -> modo de registrar um possível 'entregador' ou 'responsável' que não seja um cliente
+    - Entra na hierarquia de cliente -> Usuário superclasse de Cliente e Funcionario 
 
-### 4. Financeiro
+### 4. Financeiro -> /Financeiro
 - [ ] Registro de valor associado a cada entrega
-- [ ] Relatórios de totalização por período (mensal, semanal)
-- [ ] Relatório por cliente com total de entregas e valores
+- [ ] Relatórios de totalização por período (mensal, semanal) -> /RelatorioPeriodoPorCliente/idCliente -> form -> valor
+- [ ] Relatório por cliente com total de entregas e valores -> /RelatorioGeralPorCliente/idCliente
 
 ---
 
 ## 🛠️ Requisitos Não Funcionais
 - [ ] Interface Web responsiva usando ASP.NET MVC
 - [ ] Persistência de dados com Entity Framework
-- [ ] Controle de autenticação via Identity ou similar
-- [ ] Boas práticas de segurança (criptografia de dados sensíveis)
 - [ ] Facilidade para auditoria e rastreamento de movimentações
 
 ---
@@ -69,4 +71,3 @@ A empresa **XYZ** atua no setor de **entregas de documentos sigilosos**. Foi sol
 
 ## 🚀 Considerações
 Este sistema servirá como ferramenta central para garantir o rastreamento eficiente de documentos sigilosos, com foco em controle, segurança e transparência para os clientes da XYZ.
- 
