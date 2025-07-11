@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "071125-Desafio-MVC", "071125-Desafio-MVC.csproj", "{67612328-5C92-40DA-9166-1CD6B3FCD9C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67612328-5C92-40DA-9166-1CD6B3FCD9C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67612328-5C92-40DA-9166-1CD6B3FCD9C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67612328-5C92-40DA-9166-1CD6B3FCD9C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67612328-5C92-40DA-9166-1CD6B3FCD9C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
