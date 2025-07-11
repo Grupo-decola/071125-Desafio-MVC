@@ -7,4 +7,12 @@
         <RootNamespace>_071125_Desafio_MVC</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include=".github\Prompt\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include=".github\github-instructions.md" />
+    </ItemGroup>
+
 </Project>
